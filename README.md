@@ -135,8 +135,8 @@ Resultado: [Demo][D3-DIV-example]
 Forkeamos desde jsfiddle para comenzar la practica:  
 https://jsfiddle.net/rorjnq6f/
 
-Paso a paso el resultado:  
-Agregamos el metodo selectAll() a todos los <rect>  
+Paso a paso con cada resultado:  
+Agregamos el metodo selectAll() a todos los rect  
 https://jsfiddle.net/v617mrat/
 
 Le damos el alto y ancho correspondiente y acorde  
