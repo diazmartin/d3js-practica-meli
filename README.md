@@ -20,7 +20,7 @@ Fácil?, en resumen armamos un “campo” donde dibujar y centramos según el e
 
 [Demo SVG][svg-example]
 
-Bien ahora vamos a construir nuestro primer gráfico con D3, lo primero obvio es descargar la librería o usar un CDN, llamar la librería en el documento HTML y esas cosas que se hacen al crear un proyecto nuevo.
+Bien ahora vamos a construir nuestro primer despliegue de datos con D3, lo primero obvio es descargar la librería o usar un CDN, llamar la librería en el documento HTML y esas cosas que se hacen al crear un nuevo proyecto :)
 
 ```html
 <!DOCTYPE html>
@@ -38,10 +38,7 @@ Bien ahora vamos a construir nuestro primer gráfico con D3, lo primero obvio es
 </html>
 ```
 
-Ahora que tenemos la librería instalada vamos a crear nuestro primer gráfico.
-
-Primero vamos a utilizar la libreria D3 para añadir un elemento para explicar la forma y su funcionamiento.
-
+Primero vamos a utilizar la libreria D3 para añadir un elemento.  
 En el mismo código de ejemplo agregamos la linea
 
 ```js
@@ -70,13 +67,13 @@ El codigo quedaria asi:
 
 Bien, ahora un poco mas complejo, vamos a representar los siguientes datos.
 
-Tenemos la siguiente cadena de datos:
+Tenemos la siguiente cadena:
 
 ```js
 var datas = [ 8, 16, 32, 40, 60, 50, 20];
 ```
 
-A esta cadena la vamos a manipular con D3 para plasmar los datos.
+A esta cadena la vamos a manipular con D3 para plasmar los datos de la cadena.
 
 ```js
 d3.select('body').selectAll('p')
@@ -88,7 +85,7 @@ d3.select('body').selectAll('p')
     });
 ```
 
-Aquí lo que hacemos primero es seleccionar “body” y con selectAll() para seleccionar todos los “p” que se van a crear, en el cual cada “p” tendrá cada dato del array, esto se guarda temporalmente con el método enter() y lo aplica al añadir finalmente los “p”
+Aquí lo que hacemos primero es seleccionar “body” y con selectAll() para seleccionamos todos los “p” que se van a crear, en el cual cada “p” tendrá cada dato del array, esto se guarda temporalmente con el método enter() y lo aplica al añadir finalmente los “p” con append()
 
 Al final como este código se ejecuta 7 veces (el array datas) a cada <p> le agrega el texto de su correspondiente número (8, 16, 32, 40, 60, 50, 20)
 
@@ -129,15 +126,16 @@ d3.select('body').selectAll('div')
     });
 ```
 
-Aquí lo que hicimos fue agregar el método attr() para darle la clase css a utilizar y con el método style modificaremos de forma inline el alto según el dato del elemento del array que le corresponda a esa barra.
+Aquí lo que hicimos fue agregar el método attr() para darle la clase CSS a utilizar y con el método style() modificaremos de forma inline el alto según el dato del elemento del array que le corresponda a esa barra.
 
 Resultado: [Demo][D3-DIV-example]
 
 #Practica
 
-Forkeamos desde jsfiddle:  
+Forkeamos desde jsfiddle para comenzar la practica:  
 https://jsfiddle.net/rorjnq6f/
 
+Paso a paso el resultado:  
 Agregamos el metodo selectAll() a todos los <rect>  
 https://jsfiddle.net/v617mrat/
 
